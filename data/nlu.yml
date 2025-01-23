@@ -1,0 +1,286 @@
+version: "3.1"
+
+nlu:
+
+
+#- intent: mood_great
+#  examples: |
+#    - perfect
+#    - great
+#    - amazing
+#    - feeling like a king
+#    - wonderful
+#    - I am feeling very good
+#    - I am great
+#    - I am amazing
+#    - I am going to save the world
+#    - super stoked
+#    - extremely good
+#    - so so perfect
+#    - so good
+#    - so perfect
+#
+#- intent: mood_unhappy
+#  examples: |
+#    - my day was horrible
+#    - I am sad
+#    - I don't feel very well
+#    - I am disappointed
+#    - super sad
+#    - I'm so sad
+#    - sad
+#    - very sad
+#    - unhappy
+#    - not good
+#    - not very good
+#    - extremly sad
+#    - so saad
+#    - so sad
+
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - yes please
+    - sure
+    - yeah
+    - show me videos
+    - i would like to see videos
+    - yes show me videos
+    - yes i want videos
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - don't show videos
+    - no videos
+    - not interested
+    - skip it
+    - not now
+    - maybe later
+
+- intent: happy
+  examples: |
+    - perfect
+    - good
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: help
+  examples: |
+      - help
+    - I need help
+    - can you help me?
+    - I need assistance
+    - could you assist me?
+    - I need some help
+    - can you assist me?
+    - I need your help
+    - please help me understand
+    - can you explain something?
+    - I want to learn about something
+    - could you teach me?
+    - I'd like to understand
+    - help me learn
+    - I want to know more
+    - can you guide me?
+    - I need guidance
+    - please assist me
+    - would you help me?
+    - I'm looking for information
+    - can you provide information?
+    - I want to study
+    - help me understand
+    - I'm trying to learn
+    - could you explain?
+    - please guide me
+    - I need some clarification
+    - can you clarify something?
+    - I'm curious about something
+    - help me explore a topic
+
+- intent: list_course
+  examples: |
+    - What courses do you offer?
+    - Tell me more about subjects
+    - What courses do I have?
+    - Show my courses
+    - Which courses are available?
+    - List all my courses
+
+#- intent: course_inquiry
+#  examples: |
+#    - Tell me about Rasa?
+#    - Do you have a course on data science?
+#    - Tell me more about AI
+
+- intent: rasa
+  examples: |
+    - What do you know about Rasa?
+    - Rasa
+    - Tell me more about Rasa
+    - What does Rasa mean?
+    - Rasa is used for?
+    - Details on Rasa?
+    - What is Rasa?
+
+- intent: machine_learning
+  examples: |
+    - What is Machine Learning?
+    - What is ML?
+    - Tell me about Machine Learning
+    - Details on ML
+    - Details on Machine Learning
+
+- intent: artificial_intelligence
+  examples: |
+    - What is Artificial Intelligence?
+    - What is AI?
+    - Tell me about Artificial Intelligence
+    - Details on AI
+    - Details on Artificial Intelligence
+
+- intent: data_science
+  examples: |
+    - What is Data Science?
+    - Tell me about Data Science
+    - Data Science
+    - Details on Data Science
+
+- intent: ask_exam_type
+  examples: |
+    - How do I prepare for competitive exams?
+    - Any tips for semester exams?
+    - What should I focus on for my math test?
+
+- intent: iamabot
+  examples: |
+    - who are you?
+    - tell me about yourself
+    - what is your name?
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: subject_guidance
+  examples: |
+    - i need help with math
+    - i want guidance on this subject 
+    - guidance 
+    - about course
+    - about subject
+
+- intent: exam_preparation
+  examples: |
+    - competitive exams 
+    - sem end exam
+    - FAQ
+
+- intent: motivation
+  examples: |
+    - I feel stressed about exams
+    - Can you motivate me?
+    - How to stay focused while studying?
+
+- intent: summary_of_the_topic
+  examples: |
+    - Summarizing the topic
+    - Summary
+
+- intent: give_feedback
+  examples: |
+    - I want to give feedback
+    - Can I provide feedback?
+    - I'd like to share my opinion
+    - Here's my feedback
+    - I want to rate this bot
+
+- intent: anything_else
+  examples: |
+    - also have another question 
+    - can you help me understand it indepth
+    - need more answer on this 
+
+- intent: give_time
+  examples: |
+    - what is the time
+    - give me time
+    - tell me the time
+    - check the time 
+    - time
+    
+
+#- intent: who_are_you
+#  examples: |
+#    - Who are you?
+#    - Tell me about yourself
+#    - What are you?
+#    - Are you a bot?
+
+
+
+
+
+#- intent: did_that_help_you
+#  examples:
+#    - it did not help me
+#    - nope
+#    - it helped me alot
+
+
+
+
+
+#- intent: feedback
+#  examples: |
+#    - I want to give feedback
+#    - Your bot is amazing!
+#    - I have a suggestion

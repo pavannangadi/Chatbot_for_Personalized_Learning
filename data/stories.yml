@@ -1,0 +1,134 @@
+version: "3.1"
+stories:
+#- story: greet
+#  steps:
+#    - intent: greet
+#    - action: utter_greet
+#    - intent: happy
+#    - action: utter_happy
+##      entities:
+##        - course_name: "Python"
+##    - action: action_provide_course_info
+#
+- story: about course
+  steps:
+    - intent: list_course
+    - action: utter_list_course
+#    - intent: course_inquiry
+#    - action: utter_course_inquiry
+- story: rasa
+  steps:
+      - intent: rasa
+      - action: utter_rasa
+- story: machine_learning
+  steps:
+    - intent: machine_learning
+    - action: utter_machine_learning
+
+- story: artificial_intelligence
+  steps:
+    - intent: artificial_intelligence
+    - action: utter_artificial_intelligence
+
+- story: data_science
+  steps:
+    - intent: data_science
+    - action: utter_data_science
+#
+#- story: exam preparation with slot
+#  steps:
+#    - intent: ask_exam_type
+#    - action: utter_ask_exam_type
+#    - intent: exam_preparation
+#    - action: utter_exam_preparation
+##      entities:
+##        - exam_type: "competitive exams"
+##    - action: action_provide_exam_tips
+#
+- story: help and goodbye
+  steps:
+    - intent: help
+    - action: utter_help
+    - intent: anything_else
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_deny
+#
+#
+#- story: user gives feedback
+#  steps:
+#    - intent: give_feedback
+#    - action: utter_give_feedback
+#
+#- story: user asks who bot is
+#  steps:
+#    - intent: who_are_you
+#    - action: utter_who_are_you
+#
+#- story: user says goodbye
+#  steps:
+#    - intent: goodbye
+#    - action: utter_goodbye
+
+#Greeting and Course Inquiry
+- story: greet and ask about courses
+  steps:
+    - intent: greet
+    - action: utter_greet
+#    - intent: course_inquiry
+#    - action: utter_course_inquiry
+    - intent: list_course
+    - action: utter_list_course
+
+#Exam Preparation Guidance
+- story: exam preparation guidance
+  steps:
+    - intent: ask_exam_type
+    - action: utter_ask_exam_type
+    - intent: exam_preparation
+    - action: utter_exam_preparation
+    - intent: summary_of_the_topic
+    - action: utter_summary_of_the_topic
+#    - intent: did_that_help_you
+    - action: utter_did_that_help_you
+    - intent: affirm
+    - action: utter_happy
+
+
+
+#Seeking Motivation
+- story: user seeks motivation
+  steps:
+    - intent: motivation
+    - action: utter_motivation
+    - action: utter_did_that_help_you
+    - intent: affirm
+    - action: utter_happy
+
+#Guidance on Subjects
+- story: subject guidance
+  steps:
+    - intent: subject_guidance
+    - action: utter_subject_guidance
+    - intent: anything_else
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_deny
+
+#Feedback and Goodbye
+- story: user gives feedback and says goodbye
+  steps:
+    - intent: give_feedback
+    - action: utter_give_feedback
+    - intent: iamabot
+    - action: utter_iamabot
+    - intent: goodbye
+    - action: utter_goodbye
+
+#Date and Time using action.py
+- story: check the time
+  steps:
+    - intent: give_time
+    - action: action_show_time
+
+
