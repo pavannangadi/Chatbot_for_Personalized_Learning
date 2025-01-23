@@ -128,7 +128,7 @@ class ActionFetchYoutubeVideos(Action):
 
     def __init__(self):
 
-        self.youtube = build('youtube', 'v3', developerKey='AIzaSyDTEn7GtPNSrAffVSsCAQEMKeWHyKGedL4')
+        self.youtube = build('youtube', 'v3', developerKey='add you api key')
 
     def get_video_details(self, video_id):
         try:
