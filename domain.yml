@@ -1,0 +1,134 @@
+version: "3.1"
+
+#  utter_cheer_up:
+#  - text: "Here is something to cheer you up:"
+#    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+#session_config:
+#  session_expiration_time: 60
+#  carry_over_slots_to_new_session: true
+
+
+
+#slots:
+#  course_name:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: course_name
+#  exam_type:
+#    type: text
+#    mappings:
+#      - type: from_entity
+#        entity: exam_type
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - happy
+  - help
+  - list_course
+  - rasa
+  - machine_learning
+  - artificial_intelligence
+  - data_science
+#  - course_inquiry
+  - ask_exam_type
+  - iamabot
+  - subject_guidance
+  - exam_preparation
+  - motivation
+  - summary_of_the_topic
+  - give_feedback
+#  - who_are_you
+  - anything_else
+  - did_that_help_you
+  - give_time
+#  - default
+#  - feedback
+#entities:
+#  - course_name
+#  - exam_type
+
+actions:
+  - action_show_time
+
+responses:
+  utter_greet:
+    - text: "Hi! How can I assist you in your learning journey today?"
+    - text: "Hey! How are you 😎?"
+
+  utter_goodbye:
+    - text: "Goodbye! Keep learning and take care."
+    - text: "Keep Learning, keep exploring"
+    - text: "see you again! 😁"
+#  utter_affirm:
+
+  utter_deny:
+    - text: "Sorry for that, try again"
+    - text: "If you need any help, I'm here"
+
+  utter_happy:
+    - text: "Great, carry on!"
+    - text: "Good to hear that"
+    - text: "I'm glad to hear that! 😊"
+
+  utter_help:
+    - text: "I'm here to assist with courses, exam tips, and study guidance. What do you need help with?"
+
+  utter_list_course:
+    - text: "We have the following courses: \n1. Rasa  \n2. Machine Learning \n3. Artificial Intelligence \n4. Data Science  Which one would you like details about ?"
+
+  utter_rasa:
+    - text: "Rasa is an open-source framework used to build chatbots and virtual assistants. It helps create AI-powered systems that can understand what users say (natural language understanding) and respond in a meaningful way (natural language generation). Rasa supports custom and advanced features, making it flexible for building simple or complex chatbots."
+#  utter_course_inquiry:
+#    - text: "What course are in interested in?"
+  utter_machine_learning:
+    - text: "Machine Learning (ML) is a type of technology that allows computers to learn from data and improve their performance without being specifically programmed for every task. Instead of writing code for every possible situation, we give the computer examples (data), and it figures out patterns to make decisions or predictions."
+
+  utter_artificial_intelligence:
+    - text: "Artificial Intelligence (AI) is a technology that makes computers behave like humans by giving them the ability to think, learn, and make decisions. It uses techniques like Machine Learning (ML) to solve problems, understand language, and recognize patterns."
+
+  utter_data_science:
+    - text: "Data Science is the process of analyzing data to find useful insights. It combines math, statistics, computer science, and domain knowledge to help make better decisions or predictions using data."
+
+  utter_ask_exam_type:
+    - text: "What type of exam are you preparing for? E.g., competitive exams, semester exams."
+
+  utter_iamabot:
+    - text: "I am your educational assistant chatbot powered by rasa. How can I help you today?"
+    - text: "I am a bot 🤖, powered by Rasa."
+
+  utter_subject_guidance:
+    - text: "here is the detailed guidance on the subject"
+
+  utter_exam_preparation:
+    - text: "Where do you want me too help you"
+
+  utter_motivation:
+    - text: "take some break, go out and come back with fresh mind."
+
+  utter_summary_of_the_topic:
+    - text: "Yeah for sure i can help you with that"
+
+  utter_give_feedback:
+    - text: "Thank you for your interest in providing feedback. Please share your thoughts!"
+
+#  utter_who_are_you:
+#    - text: "I am your educational assistant chatbot, here to help with courses, exam tips, and study guidance."
+
+  utter_anything_else:
+    - text: "What else do you need help with"
+    - text: "Anything more that i can help you with"
+    - text: "do you need anything else"
+
+  utter_did_that_help_you:
+    - text: " Did that help you?"
+
+  #  utter_default:
+  #    - text: "I'm sorry, I didn't understand that. Can you please rephrase?"
+#actions:
+#  - action_provide_course_info
+#  - action_provide_exam_tips
