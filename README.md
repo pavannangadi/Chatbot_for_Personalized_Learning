@@ -79,7 +79,7 @@
       ├── rules.yml
       ├── stories.yml
 ├── pages/
-      ├── feedback_form         # Lottie animations and FormSubmit setup
+      ├── feedback_form.py       # Lottie animations and FormSubmit setup
 ├── requirements.txt             # Python dependencies
 └── README.md                    # Project documentation
 </pre>
