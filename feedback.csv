@@ -1,0 +1,9 @@
+1,Hello! I am an AI assistant. How can I help you today?,Hi,positive
+2,Would you like to see some videos related about machine learning?,There are many real-world applications for this type of model.,positive
+3,Would you like to see some videos related about machine learning?,There are many real-world applications for this type of model.,negative
+4,Goodbye! Feel free to come back anytime.,bye,positive
+5,Goodbye! Feel free to come back anytime.,bye,negative
+positive
+6,Would you like to see some videos related about machine learning?,"Examples of neural networks include deep learning, reinforcement learning, convolutional neural networks, and unsupervised learning.",positive
+7,Goodbye! Feel free to come back anytime.,bye,positive
+8,Would you like to see some videos related about machine learning?,Recent advances in CNN technology have made it possible to use CNNs to perform tasks similar to those performed by human experts.,positive
